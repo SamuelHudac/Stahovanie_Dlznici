@@ -1,0 +1,306 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="Dlznici_Model.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="Danovy_Urad">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="Ic_Dph" Type="nvarchar" MaxLength="50" />
+          <Property Name="Meno" Type="nvarchar" MaxLength="200" />
+          <Property Name="Mesto" Type="nvarchar" MaxLength="200" />
+          <Property Name="PSC" Type="nvarchar" MaxLength="50" />
+          <Property Name="Adresa" Type="nvarchar" MaxLength="150" />
+          <Property Name="Rok_Porusenia" Type="int" />
+          <Property Name="Ico" Type="int" />
+          <Property Name="Datum_Porusenia" Type="datetime" />
+          <Property Name="Datum_Aktualizacie" Type="datetime" />
+        </EntityType>
+        <EntityType Name="KurzovyListok">
+          <Key>
+            <PropertyRef Name="GuidID" />
+          </Key>
+          <Property Name="GuidID" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="Mena" Type="nvarchar" MaxLength="50" />
+          <Property Name="Kurz" Type="decimal" Precision="18" Scale="3" />
+          <Property Name="DatumAktualizacie" Type="datetime" />
+        </EntityType>
+        <EntityType Name="Socialna_Poistovna">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" Nullable="false" />
+          <Property Name="GuidID" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="MenoFirmy" Type="nvarchar" MaxLength="200" />
+          <Property Name="Adresa" Type="nvarchar" MaxLength="100" />
+          <Property Name="Mesto" Type="nvarchar" MaxLength="100" />
+          <Property Name="DlznaSuma" Type="decimal" Precision="18" Scale="3" />
+          <Property Name="DatumAktualizacie" Type="datetime" />
+        </EntityType>
+        <EntityType Name="VsZP_Samoplatitelia">
+          <Key>
+            <PropertyRef Name="GuidID" />
+          </Key>
+          <Property Name="GuidID" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="ID" Type="int" />
+          <Property Name="Meno" Type="nvarchar" MaxLength="200" />
+          <Property Name="PSC" Type="nvarchar" MaxLength="50" />
+          <Property Name="Ulica" Type="nvarchar" MaxLength="200" />
+          <Property Name="Mesto" Type="nvarchar" MaxLength="150" />
+          <Property Name="Dlzna_Suma" Type="decimal" Precision="18" Scale="3" />
+          <Property Name="Typ_Platitela" Type="nvarchar" MaxLength="100" />
+          <Property Name="Narok_Na_Starostlivost" Type="nvarchar" MaxLength="50" />
+          <Property Name="Datum_Aktualizacie" Type="datetime" />
+        </EntityType>
+        <EntityType Name="VsZP_Zamestnavatelia">
+          <Key>
+            <PropertyRef Name="GuidID" />
+          </Key>
+          <Property Name="GuidID" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="ID" Type="int" />
+          <Property Name="Meno" Type="nvarchar" MaxLength="150" />
+          <Property Name="PSC" Type="nvarchar" MaxLength="50" />
+          <Property Name="Ulica" Type="nvarchar" MaxLength="200" />
+          <Property Name="Mesto" Type="nvarchar" MaxLength="150" />
+          <Property Name="ICO" Type="nvarchar" MaxLength="150" />
+          <Property Name="Dlzna_Suma" Type="decimal" Precision="18" Scale="3" />
+          <Property Name="Typ_Platitela" Type="nvarchar" MaxLength="150" />
+          <Property Name="Narok_Na_Starostlivost" Type="nvarchar" MaxLength="50" />
+          <Property Name="Datum_Aktualizacie" Type="datetime" />
+        </EntityType>
+        <EntityType Name="Zp_Union">
+          <Key>
+            <PropertyRef Name="GuidID" />
+          </Key>
+          <Property Name="GuidID" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="Meno" Type="nvarchar" MaxLength="200" />
+          <Property Name="Mesto" Type="nvarchar" MaxLength="200" />
+          <Property Name="Ulica" Type="nvarchar" MaxLength="200" />
+          <Property Name="PSC" Type="nvarchar" MaxLength="200" />
+          <Property Name="ICO" Type="nvarchar" MaxLength="200" />
+          <Property Name="Dlzna_Suma" Type="decimal" Precision="18" Scale="3" />
+          <Property Name="Typ_Starostlivosti" Type="nvarchar" MaxLength="200" />
+          <Property Name="Datum_Aktualizacie" Type="datetime" />
+        </EntityType>
+        <EntityContainer Name="Dlznici_ModelStoreContainer">
+          <EntitySet Name="Danovy_Urad" EntityType="Self.Danovy_Urad" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="KurzovyListok" EntityType="Self.KurzovyListok" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Socialna_Poistovna" EntityType="Self.Socialna_Poistovna" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="VsZP_Samoplatitelia" EntityType="Self.VsZP_Samoplatitelia" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="VsZP_Zamestnavatelia" EntityType="Self.VsZP_Zamestnavatelia" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Zp_Union" EntityType="Self.Zp_Union" Schema="dbo" store:Type="Tables" />
+        </EntityContainer>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="Dlznici_Model" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="Danovy_Urad">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Ic_Dph" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Meno" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+          <Property Name="Mesto" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+          <Property Name="PSC" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Adresa" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
+          <Property Name="Rok_Porusenia" Type="Int32" />
+          <Property Name="Ico" Type="Int32" />
+          <Property Name="Datum_Porusenia" Type="DateTime" Precision="3" />
+          <Property Name="Datum_Aktualizacie" Type="DateTime" Precision="3" />
+        </EntityType>
+        <EntityType Name="Socialna_Poistovna">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" />
+          <Property Name="GuidID" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="MenoFirmy" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+          <Property Name="Adresa" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="Mesto" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="DlznaSuma" Type="Decimal" Precision="18" Scale="3" />
+          <Property Name="DatumAktualizacie" Type="DateTime" Precision="3" />
+        </EntityType>
+        <EntityType Name="VsZP_Samoplatitelia">
+          <Key>
+            <PropertyRef Name="GuidID" />
+          </Key>
+          <Property Name="GuidID" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="ID" Type="Int32" />
+          <Property Name="Meno" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+          <Property Name="PSC" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Ulica" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+          <Property Name="Mesto" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
+          <Property Name="Dlzna_Suma" Type="Decimal" Precision="18" Scale="3" />
+          <Property Name="Typ_Platitela" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="Narok_Na_Starostlivost" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Datum_Aktualizacie" Type="DateTime" Precision="3" />
+        </EntityType>
+        <EntityType Name="VsZP_Zamestnavatelia">
+          <Key>
+            <PropertyRef Name="GuidID" />
+          </Key>
+          <Property Name="GuidID" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="ID" Type="Int32" />
+          <Property Name="Meno" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
+          <Property Name="PSC" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Ulica" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+          <Property Name="Mesto" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
+          <Property Name="ICO" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
+          <Property Name="Dlzna_Suma" Type="Decimal" Precision="18" Scale="3" />
+          <Property Name="Typ_Platitela" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
+          <Property Name="Narok_Na_Starostlivost" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Datum_Aktualizacie" Type="DateTime" Precision="3" />
+        </EntityType>
+        <EntityContainer Name="Dlznici_Entities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="Danovy_Urad" EntityType="Self.Danovy_Urad" />
+          <EntitySet Name="Socialna_Poistovna" EntityType="Self.Socialna_Poistovna" />
+          <EntitySet Name="VsZP_Samoplatitelia" EntityType="Self.VsZP_Samoplatitelia" />
+          <EntitySet Name="VsZP_Zamestnavatelia" EntityType="Self.VsZP_Zamestnavatelia" />
+          <EntitySet Name="Zp_Union" EntityType="Dlznici_Model.Zp_Union" />
+          <EntitySet Name="KurzovyListoks" EntityType="Dlznici_Model.KurzovyListok" />
+        </EntityContainer>
+        <EntityType Name="Zp_Union">
+          <Key>
+            <PropertyRef Name="GuidID" />
+          </Key>
+          <Property Name="GuidID" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Meno" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+          <Property Name="Mesto" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+          <Property Name="Ulica" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+          <Property Name="PSC" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+          <Property Name="ICO" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+          <Property Name="Dlzna_Suma" Type="Decimal" Precision="18" Scale="3" />
+          <Property Name="Typ_Starostlivosti" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+          <Property Name="Datum_Aktualizacie" Type="DateTime" Precision="3" />
+        </EntityType>
+        <EntityType Name="KurzovyListok">
+          <Key>
+            <PropertyRef Name="GuidID" />
+          </Key>
+          <Property Name="GuidID" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Mena" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Kurz" Type="Decimal" Precision="18" Scale="3" />
+          <Property Name="DatumAktualizacie" Type="DateTime" Precision="3" />
+        </EntityType>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="Dlznici_ModelStoreContainer" CdmEntityContainer="Dlznici_Entities">
+          <EntitySetMapping Name="Danovy_Urad">
+            <EntityTypeMapping TypeName="Dlznici_Model.Danovy_Urad">
+              <MappingFragment StoreEntitySet="Danovy_Urad">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="Ic_Dph" ColumnName="Ic_Dph" />
+                <ScalarProperty Name="Meno" ColumnName="Meno" />
+                <ScalarProperty Name="Mesto" ColumnName="Mesto" />
+                <ScalarProperty Name="PSC" ColumnName="PSC" />
+                <ScalarProperty Name="Adresa" ColumnName="Adresa" />
+                <ScalarProperty Name="Rok_Porusenia" ColumnName="Rok_Porusenia" />
+                <ScalarProperty Name="Ico" ColumnName="Ico" />
+                <ScalarProperty Name="Datum_Porusenia" ColumnName="Datum_Porusenia" />
+                <ScalarProperty Name="Datum_Aktualizacie" ColumnName="Datum_Aktualizacie" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Socialna_Poistovna">
+            <EntityTypeMapping TypeName="Dlznici_Model.Socialna_Poistovna">
+              <MappingFragment StoreEntitySet="Socialna_Poistovna">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="GuidID" ColumnName="GuidID" />
+                <ScalarProperty Name="MenoFirmy" ColumnName="MenoFirmy" />
+                <ScalarProperty Name="Adresa" ColumnName="Adresa" />
+                <ScalarProperty Name="Mesto" ColumnName="Mesto" />
+                <ScalarProperty Name="DlznaSuma" ColumnName="DlznaSuma" />
+                <ScalarProperty Name="DatumAktualizacie" ColumnName="DatumAktualizacie" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="VsZP_Samoplatitelia">
+            <EntityTypeMapping TypeName="Dlznici_Model.VsZP_Samoplatitelia">
+              <MappingFragment StoreEntitySet="VsZP_Samoplatitelia">
+                <ScalarProperty Name="GuidID" ColumnName="GuidID" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="Meno" ColumnName="Meno" />
+                <ScalarProperty Name="PSC" ColumnName="PSC" />
+                <ScalarProperty Name="Ulica" ColumnName="Ulica" />
+                <ScalarProperty Name="Mesto" ColumnName="Mesto" />
+                <ScalarProperty Name="Dlzna_Suma" ColumnName="Dlzna_Suma" />
+                <ScalarProperty Name="Typ_Platitela" ColumnName="Typ_Platitela" />
+                <ScalarProperty Name="Narok_Na_Starostlivost" ColumnName="Narok_Na_Starostlivost" />
+                <ScalarProperty Name="Datum_Aktualizacie" ColumnName="Datum_Aktualizacie" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="VsZP_Zamestnavatelia">
+            <EntityTypeMapping TypeName="Dlznici_Model.VsZP_Zamestnavatelia">
+              <MappingFragment StoreEntitySet="VsZP_Zamestnavatelia">
+                <ScalarProperty Name="Datum_Aktualizacie" ColumnName="Datum_Aktualizacie" />
+                <ScalarProperty Name="GuidID" ColumnName="GuidID" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="Meno" ColumnName="Meno" />
+                <ScalarProperty Name="PSC" ColumnName="PSC" />
+                <ScalarProperty Name="Ulica" ColumnName="Ulica" />
+                <ScalarProperty Name="Mesto" ColumnName="Mesto" />
+                <ScalarProperty Name="ICO" ColumnName="ICO" />
+                <ScalarProperty Name="Dlzna_Suma" ColumnName="Dlzna_Suma" />
+                <ScalarProperty Name="Typ_Platitela" ColumnName="Typ_Platitela" />
+                <ScalarProperty Name="Narok_Na_Starostlivost" ColumnName="Narok_Na_Starostlivost" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Zp_Union">
+            <EntityTypeMapping TypeName="Dlznici_Model.Zp_Union">
+              <MappingFragment StoreEntitySet="Zp_Union">
+                <ScalarProperty Name="Datum_Aktualizacie" ColumnName="Datum_Aktualizacie" />
+                <ScalarProperty Name="Typ_Starostlivosti" ColumnName="Typ_Starostlivosti" />
+                <ScalarProperty Name="Dlzna_Suma" ColumnName="Dlzna_Suma" />
+                <ScalarProperty Name="ICO" ColumnName="ICO" />
+                <ScalarProperty Name="PSC" ColumnName="PSC" />
+                <ScalarProperty Name="Ulica" ColumnName="Ulica" />
+                <ScalarProperty Name="Mesto" ColumnName="Mesto" />
+                <ScalarProperty Name="Meno" ColumnName="Meno" />
+                <ScalarProperty Name="GuidID" ColumnName="GuidID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="KurzovyListoks">
+            <EntityTypeMapping TypeName="Dlznici_Model.KurzovyListok">
+              <MappingFragment StoreEntitySet="KurzovyListok">
+                <ScalarProperty Name="DatumAktualizacie" ColumnName="DatumAktualizacie" />
+                <ScalarProperty Name="Kurz" ColumnName="Kurz" />
+                <ScalarProperty Name="Mena" ColumnName="Mena" />
+                <ScalarProperty Name="GuidID" ColumnName="GuidID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="True" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

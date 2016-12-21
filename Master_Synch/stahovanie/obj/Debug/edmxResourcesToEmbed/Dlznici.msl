@@ -1,0 +1,92 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="Dlznici_ModelStoreContainer" CdmEntityContainer="Dlznici_Entities">
+    <EntitySetMapping Name="Danovy_Urad">
+      <EntityTypeMapping TypeName="Dlznici_Model.Danovy_Urad">
+        <MappingFragment StoreEntitySet="Danovy_Urad">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Ic_Dph" ColumnName="Ic_Dph" />
+          <ScalarProperty Name="Meno" ColumnName="Meno" />
+          <ScalarProperty Name="Mesto" ColumnName="Mesto" />
+          <ScalarProperty Name="PSC" ColumnName="PSC" />
+          <ScalarProperty Name="Adresa" ColumnName="Adresa" />
+          <ScalarProperty Name="Rok_Porusenia" ColumnName="Rok_Porusenia" />
+          <ScalarProperty Name="Ico" ColumnName="Ico" />
+          <ScalarProperty Name="Datum_Porusenia" ColumnName="Datum_Porusenia" />
+          <ScalarProperty Name="Datum_Aktualizacie" ColumnName="Datum_Aktualizacie" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Socialna_Poistovna">
+      <EntityTypeMapping TypeName="Dlznici_Model.Socialna_Poistovna">
+        <MappingFragment StoreEntitySet="Socialna_Poistovna">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="GuidID" ColumnName="GuidID" />
+          <ScalarProperty Name="MenoFirmy" ColumnName="MenoFirmy" />
+          <ScalarProperty Name="Adresa" ColumnName="Adresa" />
+          <ScalarProperty Name="Mesto" ColumnName="Mesto" />
+          <ScalarProperty Name="DlznaSuma" ColumnName="DlznaSuma" />
+          <ScalarProperty Name="DatumAktualizacie" ColumnName="DatumAktualizacie" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="VsZP_Samoplatitelia">
+      <EntityTypeMapping TypeName="Dlznici_Model.VsZP_Samoplatitelia">
+        <MappingFragment StoreEntitySet="VsZP_Samoplatitelia">
+          <ScalarProperty Name="GuidID" ColumnName="GuidID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Meno" ColumnName="Meno" />
+          <ScalarProperty Name="PSC" ColumnName="PSC" />
+          <ScalarProperty Name="Ulica" ColumnName="Ulica" />
+          <ScalarProperty Name="Mesto" ColumnName="Mesto" />
+          <ScalarProperty Name="Dlzna_Suma" ColumnName="Dlzna_Suma" />
+          <ScalarProperty Name="Typ_Platitela" ColumnName="Typ_Platitela" />
+          <ScalarProperty Name="Narok_Na_Starostlivost" ColumnName="Narok_Na_Starostlivost" />
+          <ScalarProperty Name="Datum_Aktualizacie" ColumnName="Datum_Aktualizacie" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="VsZP_Zamestnavatelia">
+      <EntityTypeMapping TypeName="Dlznici_Model.VsZP_Zamestnavatelia">
+        <MappingFragment StoreEntitySet="VsZP_Zamestnavatelia">
+          <ScalarProperty Name="Datum_Aktualizacie" ColumnName="Datum_Aktualizacie" />
+          <ScalarProperty Name="GuidID" ColumnName="GuidID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Meno" ColumnName="Meno" />
+          <ScalarProperty Name="PSC" ColumnName="PSC" />
+          <ScalarProperty Name="Ulica" ColumnName="Ulica" />
+          <ScalarProperty Name="Mesto" ColumnName="Mesto" />
+          <ScalarProperty Name="ICO" ColumnName="ICO" />
+          <ScalarProperty Name="Dlzna_Suma" ColumnName="Dlzna_Suma" />
+          <ScalarProperty Name="Typ_Platitela" ColumnName="Typ_Platitela" />
+          <ScalarProperty Name="Narok_Na_Starostlivost" ColumnName="Narok_Na_Starostlivost" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Zp_Union">
+      <EntityTypeMapping TypeName="Dlznici_Model.Zp_Union">
+        <MappingFragment StoreEntitySet="Zp_Union">
+          <ScalarProperty Name="Datum_Aktualizacie" ColumnName="Datum_Aktualizacie" />
+          <ScalarProperty Name="Typ_Starostlivosti" ColumnName="Typ_Starostlivosti" />
+          <ScalarProperty Name="Dlzna_Suma" ColumnName="Dlzna_Suma" />
+          <ScalarProperty Name="ICO" ColumnName="ICO" />
+          <ScalarProperty Name="PSC" ColumnName="PSC" />
+          <ScalarProperty Name="Ulica" ColumnName="Ulica" />
+          <ScalarProperty Name="Mesto" ColumnName="Mesto" />
+          <ScalarProperty Name="Meno" ColumnName="Meno" />
+          <ScalarProperty Name="GuidID" ColumnName="GuidID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="KurzovyListoks">
+      <EntityTypeMapping TypeName="Dlznici_Model.KurzovyListok">
+        <MappingFragment StoreEntitySet="KurzovyListok">
+          <ScalarProperty Name="DatumAktualizacie" ColumnName="DatumAktualizacie" />
+          <ScalarProperty Name="Kurz" ColumnName="Kurz" />
+          <ScalarProperty Name="Mena" ColumnName="Mena" />
+          <ScalarProperty Name="GuidID" ColumnName="GuidID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

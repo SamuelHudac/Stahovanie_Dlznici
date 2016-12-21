@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="DlzniciModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Danovy_Urad">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Ic_Dph" Type="nvarchar" MaxLength="50" />
+    <Property Name="Meno" Type="nvarchar" MaxLength="200" />
+    <Property Name="Mesto" Type="nvarchar" MaxLength="100" />
+    <Property Name="PSC" Type="nvarchar" MaxLength="50" />
+    <Property Name="Adresa" Type="nvarchar" MaxLength="150" />
+    <Property Name="Rok_Porusenia" Type="int" />
+    <Property Name="Ico" Type="int" />
+    <Property Name="Datum_Aktualizacie" Type="datetime" />
+  </EntityType>
+  <EntityType Name="Socialna_Poistovna">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" />
+    <Property Name="GuidID" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="MenoFirmy" Type="nvarchar" MaxLength="200" />
+    <Property Name="Adresa" Type="nvarchar" MaxLength="100" />
+    <Property Name="Mesto" Type="nvarchar" MaxLength="100" />
+    <Property Name="DlznaSuma" Type="decimal" Precision="18" Scale="3" />
+    <Property Name="DatumAktualizacie" Type="datetime" />
+  </EntityType>
+  <EntityContainer Name="DlzniciModelStoreContainer">
+    <EntitySet Name="Danovy_Urad" EntityType="Self.Danovy_Urad" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Socialna_Poistovna" EntityType="Self.Socialna_Poistovna" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

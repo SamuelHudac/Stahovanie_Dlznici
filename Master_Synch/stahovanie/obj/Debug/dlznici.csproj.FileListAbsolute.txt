@@ -1,0 +1,66 @@
+c:\users\samuel\documents\visual studio 2015\Projects\stahovanie\stahovanie\bin\Debug\stahovanie.exe.config
+c:\users\samuel\documents\visual studio 2015\Projects\stahovanie\stahovanie\bin\Debug\stahovanie.exe
+c:\users\samuel\documents\visual studio 2015\Projects\stahovanie\stahovanie\bin\Debug\stahovanie.pdb
+c:\users\samuel\documents\visual studio 2015\Projects\stahovanie\stahovanie\obj\Debug\dlznici.csprojResolveAssemblyReference.cache
+c:\users\samuel\documents\visual studio 2015\Projects\stahovanie\stahovanie\obj\Debug\stahovanie.DlzniciForm.resources
+c:\users\samuel\documents\visual studio 2015\Projects\stahovanie\stahovanie\obj\Debug\stahovanie.Properties.Resources.resources
+c:\users\samuel\documents\visual studio 2015\Projects\stahovanie\stahovanie\obj\Debug\dlznici.csproj.GenerateResource.Cache
+c:\users\samuel\documents\visual studio 2015\Projects\stahovanie\stahovanie\obj\Debug\stahovanie.exe
+c:\users\samuel\documents\visual studio 2015\Projects\stahovanie\stahovanie\obj\Debug\stahovanie.pdb
+C:\Users\Samuel\Documents\Visual Studio 2015\Projects\stahovanie\stahovanie\bin\Debug\EntityFramework.BulkInsert.dll
+C:\Users\Samuel\Documents\Visual Studio 2015\Projects\stahovanie\stahovanie\bin\Debug\EntityFramework.dll
+C:\Users\Samuel\Documents\Visual Studio 2015\Projects\stahovanie\stahovanie\bin\Debug\EntityFramework.MappingAPI.dll
+C:\Users\Samuel\Documents\Visual Studio 2015\Projects\stahovanie\stahovanie\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Samuel\Documents\Visual Studio 2015\Projects\stahovanie\stahovanie\bin\Debug\EntityFramework.xml
+C:\Users\Samuel\Documents\Visual Studio 2015\Projects\stahovanie\stahovanie\bin\Debug\EntityFramework.BulkInsert.pdb
+C:\Users\Samuel\Documents\Visual Studio 2015\Projects\stahovanie\stahovanie\bin\Debug\EntityFramework.MappingAPI.pdb
+C:\Users\Samuel\Documents\Visual Studio 2015\Projects\stahovanie\stahovanie\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Samuel\Documents\Visual Studio 2015\Projects\stahovanie\stahovanie\bin\Debug\dotMemory.Unit.dll
+C:\Users\Samuel\Documents\Visual Studio 2015\Projects\stahovanie\stahovanie\bin\Debug\dotMemory.Unit.xml
+C:\Users\Samuel\Documents\Visual Studio 2015\Projects\stahovanie\stahovanie\bin\Debug\itextsharp.dll
+C:\Users\Samuel\Documents\Visual Studio 2015\Projects\stahovanie\stahovanie\bin\Debug\itextsharp.xml
+C:\Users\samuel.hudac\Desktop\stahovanie\stahovanie\stahovanie\bin\Debug\stahovanie.exe.config
+C:\Users\samuel.hudac\Desktop\stahovanie\stahovanie\stahovanie\obj\Debug\stahovanie.exe
+C:\Users\samuel.hudac\Desktop\stahovanie\stahovanie\stahovanie\obj\Debug\stahovanie.pdb
+C:\Users\samuel.hudac\Desktop\stahovanie\stahovanie\stahovanie\bin\Debug\stahovanie.exe
+C:\Users\samuel.hudac\Desktop\stahovanie\stahovanie\stahovanie\bin\Debug\stahovanie.pdb
+C:\Users\samuel.hudac\Desktop\stahovanie\stahovanie\stahovanie\bin\Debug\dotMemory.Unit.dll
+C:\Users\samuel.hudac\Desktop\stahovanie\stahovanie\stahovanie\bin\Debug\EntityFramework.BulkInsert.dll
+C:\Users\samuel.hudac\Desktop\stahovanie\stahovanie\stahovanie\bin\Debug\EntityFramework.dll
+C:\Users\samuel.hudac\Desktop\stahovanie\stahovanie\stahovanie\bin\Debug\EntityFramework.MappingAPI.dll
+C:\Users\samuel.hudac\Desktop\stahovanie\stahovanie\stahovanie\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\samuel.hudac\Desktop\stahovanie\stahovanie\stahovanie\bin\Debug\itextsharp.dll
+C:\Users\samuel.hudac\Desktop\stahovanie\stahovanie\stahovanie\bin\Debug\dotMemory.Unit.xml
+C:\Users\samuel.hudac\Desktop\stahovanie\stahovanie\stahovanie\bin\Debug\EntityFramework.xml
+C:\Users\samuel.hudac\Desktop\stahovanie\stahovanie\stahovanie\bin\Debug\EntityFramework.BulkInsert.pdb
+C:\Users\samuel.hudac\Desktop\stahovanie\stahovanie\stahovanie\bin\Debug\EntityFramework.MappingAPI.pdb
+C:\Users\samuel.hudac\Desktop\stahovanie\stahovanie\stahovanie\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\samuel.hudac\Desktop\stahovanie\stahovanie\stahovanie\bin\Debug\itextsharp.xml
+C:\Users\samuel.hudac\Desktop\stahovanie\stahovanie\stahovanie\obj\Debug\dlznici.csprojResolveAssemblyReference.cache
+C:\Users\samuel.hudac\Desktop\stahovanie\stahovanie\stahovanie\obj\Debug\stahovanie.DlzniciForm.resources
+C:\Users\samuel.hudac\Desktop\stahovanie\stahovanie\stahovanie\obj\Debug\stahovanie.Properties.Resources.resources
+C:\Users\samuel.hudac\Desktop\stahovanie\stahovanie\stahovanie\obj\Debug\dlznici.csproj.GenerateResource.Cache
+C:\Users\Samuel\Desktop\stahovanie\stahovanie\stahovanie\bin\Debug\stahovanie.exe.config
+C:\Users\Samuel\Desktop\stahovanie\stahovanie\stahovanie\obj\Debug\stahovanie.exe
+C:\Users\Samuel\Desktop\stahovanie\stahovanie\stahovanie\obj\Debug\stahovanie.pdb
+C:\Users\Samuel\Desktop\stahovanie\stahovanie\stahovanie\bin\Debug\stahovanie.exe
+C:\Users\Samuel\Desktop\stahovanie\stahovanie\stahovanie\bin\Debug\stahovanie.pdb
+C:\Users\Samuel\Desktop\stahovanie\stahovanie\stahovanie\bin\Debug\dotMemory.Unit.dll
+C:\Users\Samuel\Desktop\stahovanie\stahovanie\stahovanie\bin\Debug\EntityFramework.BulkInsert.dll
+C:\Users\Samuel\Desktop\stahovanie\stahovanie\stahovanie\bin\Debug\EntityFramework.dll
+C:\Users\Samuel\Desktop\stahovanie\stahovanie\stahovanie\bin\Debug\EntityFramework.MappingAPI.dll
+C:\Users\Samuel\Desktop\stahovanie\stahovanie\stahovanie\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Samuel\Desktop\stahovanie\stahovanie\stahovanie\bin\Debug\itextsharp.dll
+C:\Users\Samuel\Desktop\stahovanie\stahovanie\stahovanie\bin\Debug\dotMemory.Unit.xml
+C:\Users\Samuel\Desktop\stahovanie\stahovanie\stahovanie\bin\Debug\EntityFramework.xml
+C:\Users\Samuel\Desktop\stahovanie\stahovanie\stahovanie\bin\Debug\EntityFramework.BulkInsert.pdb
+C:\Users\Samuel\Desktop\stahovanie\stahovanie\stahovanie\bin\Debug\EntityFramework.MappingAPI.pdb
+C:\Users\Samuel\Desktop\stahovanie\stahovanie\stahovanie\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Samuel\Desktop\stahovanie\stahovanie\stahovanie\bin\Debug\itextsharp.xml
+C:\Users\Samuel\Desktop\stahovanie\stahovanie\stahovanie\obj\Debug\dlznici.csprojResolveAssemblyReference.cache
+C:\Users\Samuel\Desktop\stahovanie\stahovanie\stahovanie\obj\Debug\stahovanie.DlzniciForm.resources
+C:\Users\Samuel\Desktop\stahovanie\stahovanie\stahovanie\obj\Debug\stahovanie.Properties.Resources.resources
+C:\Users\Samuel\Desktop\stahovanie\stahovanie\stahovanie\obj\Debug\dlznici.csproj.GenerateResource.Cache
+C:\Users\Samuel\Documents\GitHub\Dlznici\stahovanie\bin\Debug\stahovanie.exe.config
+C:\Users\Samuel\Documents\GitHub\Dlznici\stahovanie\obj\Debug\stahovanie.exe
+C:\Users\Samuel\Documents\GitHub\Dlznici\stahovanie\obj\Debug\stahovanie.pdb

@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="DlzniciModelStoreContainer" CdmEntityContainer="DlzniciEntities">
+    <EntitySetMapping Name="Socialna_Poistovna">
+      <EntityTypeMapping TypeName="DlzniciModel.Socialna_Poistovna">
+        <MappingFragment StoreEntitySet="Socialna_Poistovna">
+          <ScalarProperty Name="DatumAktualizacie" ColumnName="DatumAktualizacie" />
+          <ScalarProperty Name="GuidID" ColumnName="GuidID" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="MenoFirmy" ColumnName="MenoFirmy" />
+          <ScalarProperty Name="Adresa" ColumnName="Adresa" />
+          <ScalarProperty Name="Mesto" ColumnName="Mesto" />
+          <ScalarProperty Name="DlznaSuma" ColumnName="DlznaSuma" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
